@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  font-family: 'Roboto', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Contenedor general centrado */
+.container {
+  width: 70vw;        /* Ocupa el 90% del ancho de la ventana */
+  max-width: 800px;   /* Pero no más de 600px */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* para que hijos ocupen el 100% del ancho */
+  gap: 20px;
+}
+
+
+/* Título sticky */
+h1 {
+  font-size: 2.8em;
+  line-height: 1.1;
+  margin: 0 0 20px;
+  position: sticky;
+  top: 0;
+  background-color: #242424;
+  padding: 20px 0 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  border-bottom: 1px solid #444;
+}
+
+/* Formulario más estrecho */
+form,
+.add-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-task-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #222;
+  color: #eee;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add-task-form input[type="text"]:focus {
+  border-color: #646cff;
+  background-color: #1a1a1a;
+}
+
+.add-task-form input::placeholder {
+  color: #666;
+}
+
+
+/* Lista de tareas más ancha que el formulario */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Ítems individuales */
+.todo-item {
+  background-color: #0000003a;
+  padding: 12px 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #eee;
+}
+
+/* Texto dentro del item */
+.todo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 75%;
+  color: #eee;
+  text-align: left;
+}
+
+.todo-text strong {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.todo-text span {
+  margin: 0;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+/* Botones de acción */
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.actions button {
+  background-color: #1a1a1a;
+  border: 1px solid transparent;
+  font-size: 1.2em;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: border-color 0.25s;
+}
+
+.actions button:hover {
+  border-color: #646cff;
+}
+
+.actions button.delete-button {
+  color: red;
+  font-weight: bold;
+}
+
+.actions button.delete-button:hover {
+  border-color: #646cff;
+}
+
+/* Icono lápiz verde */
+button[aria-label="Editar tarea"] {
+  color: #3ecf8e;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+button[aria-label="Editar tarea"]:hover {
+  color: #2bb673;
+}
+
+/* Input dentro de cada tarea (modo edición) */
+.todo-item input[type="text"] {
+  margin-right: 8px;
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  color: #eee;
+  font-size: 1em;
+}
+
+.todo-item input[type="text"]:focus {
+  outline: none;
+  border-color: #646cff;
+  background-color: #1a1a1a;
+}
+
+/* Enlaces generales */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/* Botones generales */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Tema claro (opcional) */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+
+  h1 {
+    background-color: #ffffff;
+  }
+}
