@@ -24,18 +24,17 @@ body {
   align-items: center;
 }
 
-/* Contenedor general centrado */
+
 .container {
-  width: 70vw;        /* Ocupa el 90% del ancho de la ventana */
-  max-width: 800px;   /* Pero no más de 600px */
+  width: 70vw;       
+  max-width: 800px;  
   display: flex;
   flex-direction: column;
-  align-items: stretch; /* para que hijos ocupen el 100% del ancho */
+  align-items: stretch;
   gap: 20px;
 }
 
 
-/* Título sticky */
 h1 {
   font-size: 2.8em;
   line-height: 1.1;
@@ -50,7 +49,7 @@ h1 {
   border-bottom: 1px solid #444;
 }
 
-/* Formulario más estrecho */
+
 form,
 .add-task-form {
   display: flex;
@@ -79,7 +78,6 @@ form,
 }
 
 
-/* Lista de tareas más ancha que el formulario */
 .todo-list {
   list-style: none;
   padding: 0;
@@ -89,7 +87,6 @@ form,
   gap: 12px;
 }
 
-/* Ítems individuales */
 .todo-item {
   background-color: #0000003a;
   padding: 12px 15px;
@@ -100,7 +97,7 @@ form,
   color: #eee;
 }
 
-/* Texto dentro del item */
+
 .todo-text {
   display: flex;
   flex-direction: column;
@@ -122,7 +119,7 @@ form,
   color: #ccc;
 }
 
-/* Botones de acción */
+
 .actions {
   display: flex;
   gap: 6px;
@@ -156,7 +153,7 @@ form,
   border-color: #646cff;
 }
 
-/* Icono lápiz verde */
+
 button[aria-label="Editar tarea"] {
   color: #3ecf8e;
   font-weight: bold;
@@ -166,7 +163,7 @@ button[aria-label="Editar tarea"]:hover {
   color: #2bb673;
 }
 
-/* Input dentro de cada tarea (modo edición) */
+
 .todo-item input[type="text"] {
   margin-right: 8px;
   padding: 6px 8px;
@@ -183,7 +180,7 @@ button[aria-label="Editar tarea"]:hover {
   background-color: #1a1a1a;
 }
 
-/* Enlaces generales */
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -193,7 +190,7 @@ a:hover {
   color: #535bf2;
 }
 
-/* Botones generales */
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -215,7 +212,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* Tema claro (opcional) */
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
