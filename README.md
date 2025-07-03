@@ -16,7 +16,7 @@ Esta aplicación es una lista de tareas que permite crear, listar, actualizar y 
 
 
 ## Estructura básica del código
-    - Los endpoionts del Bakc-End están en el archivo app.py, y son los pedidos en el enunciado del ejercicio:
+    - Los endpoionts del Back-End están en el archivo app.py, y son los pedidos en el enunciado del ejercicio:
 
     | Método | Ruta         | Descripción                       |
 |--------|--------------|-----------------------------------|
