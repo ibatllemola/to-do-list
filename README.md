@@ -36,45 +36,45 @@ Primero, asegúrate de estar en la raíz del proyecto cuando se ejecuten los com
 
 1. Clonar el repositorio
 
-    git clone https://github.com/ibatllemola/to-do-list/
+    - git clone https://github.com/ibatllemola/to-do-list/
    
 
     Para asegurarnos que trabajamos en la carpeta adecuada ejecutamos:
 
-    cd to-do-list
+    - cd to-do-list
 
 
 3. Crear y activar entorno virtual para aislar las dependencias
 
     `Windows`: 
 
-    python -m venv venv
+    - python -m venv venv
    
-    .\venv\Scripts\Activate.ps1
+    - .\venv\Scripts\Activate.ps1
 
 
     `macOS y Linux`:
 
-    python3 -m venv venv
+    - python3 -m venv venv
 
-    source venv/bin/activate
+    - source venv/bin/activate
 
 
 5. Instalar dependencias de Python
 
-    pip install -r src/requirements.txt
+    - pip install -r src/requirements.txt
 
 
 6. Ejecutar el servidor del Back-End
 
-    python src/app.py
+    - python src/app.py
 
 
     Asegurarse que flask y CORS están instalados, sino ejecutar:
 
-    pip install flask
+    - pip install flask
 
-    pip install flask-cors
+    - pip install flask-cors
 
 
     El servidor estará en el puerto http://127.0.0.1:3245 por defecto
