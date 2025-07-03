@@ -10,7 +10,7 @@ function ToDoList() {
   const [editingId, setEditingId] = useState(null);
   const [editTitle, setEditTitle] = useState("");
   const [editDescription, setEditDescription] = useState("");
-  const [editStatus, setEditStatus] = useState("pending"); // Estado para editar
+  const [editStatus, setEditStatus] = useState("pending"); 
 
   useEffect(() => {
     getTasks();
@@ -106,7 +106,6 @@ function ToDoList() {
           onChange={(e) => setDescription(e.target.value)}
           placeholder="Descripción de la tarea"
         />
-        {/* Eliminamos el select para estado */}
         <button type="submit">Añadir tarea</button>
       </form>
 

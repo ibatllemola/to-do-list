@@ -16,9 +16,9 @@ Esta aplicación es una lista de tareas que permite crear, listar, actualizar y 
 
 
 ## Estructura básica del código
-    - Los endpoionts del Bakc-End están en el archivo app.py, y son los pedidos en el enunciado del ejercicio:
+    - Los endpoionts del Back-End están en el archivo app.py, y son los pedidos en el enunciado del ejercicio:
 
-    | Método | Ruta         | Descripción                       |
+| Método | Ruta         | Descripción                       |
 |--------|--------------|-----------------------------------|
 | POST   | `/tasks`     | Crear una nueva tarea             |
 | GET    | `/tasks`     | Listar todas las tareas           |
@@ -41,7 +41,7 @@ Primero, asegúrate de estar en la raíz del proyecto cuando se ejecuten los com
     cd my-app
 
 
-2. Crear y activar entorno virtual para aislar las dependencias
+3. Crear y activar entorno virtual para aislar las dependencias
 
     `Windows`: 
 
@@ -57,12 +57,12 @@ Primero, asegúrate de estar en la raíz del proyecto cuando se ejecuten los com
     source venv/bin/activate
 
 
-3. Instalar dependencias de Python
+4. Instalar dependencias de Python
 
     pip install -r src/requirements.txt
 
 
-4. Ejecutar el servidor del Back-End
+5. Ejecutar el servidor del Back-End
 
     python src/app.py
 
@@ -77,7 +77,7 @@ Primero, asegúrate de estar en la raíz del proyecto cuando se ejecuten los com
     El servidor estará en el puerto http://127.0.0.1:3245 por defecto
 
 
-5. En otro terminal ejecutar el Front-End
+6. En otro terminal ejecutar el Front-End
 
     npm install
 
