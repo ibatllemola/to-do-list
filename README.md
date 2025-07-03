@@ -36,12 +36,12 @@ Primero, asegúrate de estar en la raíz del proyecto cuando se ejecuten los com
 
 1. CLonar el repositorio
 
-    git clone <url-del-repositorio>
+    git clone https://github.com/ibatllemola/to-do-list.git
+   
+    cd to-do-list/my-app
 
-    cd my-app
 
-
-2. Crear y activar entorno virtual para aislar las dependencias
+3. Crear y activar entorno virtual para aislar las dependencias
 
     `Windows`: 
 
@@ -57,19 +57,19 @@ Primero, asegúrate de estar en la raíz del proyecto cuando se ejecuten los com
     source venv/bin/activate
 
 
-3. Instalar dependencias de Python
+4. Instalar dependencias de Python
 
     pip install -r src/requirements.txt
 
 
-4. Ejecutar el servidor del Back-End
+5. Ejecutar el servidor del Back-End
 
     python src/app.py
 
     El servidor estará en el puerto http://127.0.0.1:3245 por defecto
 
 
-5. En otro terminal ejecutar el Front-End
+6. En otro terminal ejecutar el Front-End
 
     npm install
 
