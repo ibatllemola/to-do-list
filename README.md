@@ -36,7 +36,7 @@ Primero, asegúrate de estar en la raíz del proyecto cuando se ejecuten los com
 
 1. CLonar el repositorio
 
-    git clone <url-del-repositorio>
+    git clone https://github.com/ibatllemola/to-do-list/
 
     cd my-app
 
@@ -47,7 +47,7 @@ Primero, asegúrate de estar en la raíz del proyecto cuando se ejecuten los com
 
     python -m venv venv
 
-    \venv\Scripts\activate
+    .\venv\Scripts\Activate.ps1
 
 
     `macOS y Linux`:
@@ -65,6 +65,14 @@ Primero, asegúrate de estar en la raíz del proyecto cuando se ejecuten los com
 4. Ejecutar el servidor del Back-End
 
     python src/app.py
+
+
+    Asegurarse que flask y CORS están instalados, sino ejecutar:
+
+    pip install flask
+
+    pip install flask-cors
+
 
     El servidor estará en el puerto http://127.0.0.1:3245 por defecto
 

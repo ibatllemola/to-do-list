@@ -4,7 +4,8 @@ function ToDoList() {
   const [toDos, setToDos] = useState([]);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-   const status = "pending";
+  const [status, setStatus] = useState("pending");
+
 
   const [editingId, setEditingId] = useState(null);
   const [editTitle, setEditTitle] = useState("");
