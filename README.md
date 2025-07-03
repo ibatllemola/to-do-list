@@ -34,11 +34,14 @@ Esta aplicación es una lista de tareas que permite crear, listar, actualizar y 
 
 Primero, asegúrate de estar en la raíz del proyecto cuando se ejecuten los comandos. 
 
-1. CLonar el repositorio
+1. Clonar el repositorio
 
     git clone https://github.com/ibatllemola/to-do-list/
+   
 
-    cd my-app
+    Para asegurarnos que trabajamos en la carpeta adecuada ejecutamos:
+
+    cd to-do-list
 
 
 3. Crear y activar entorno virtual para aislar las dependencias
@@ -46,7 +49,7 @@ Primero, asegúrate de estar en la raíz del proyecto cuando se ejecuten los com
     `Windows`: 
 
     python -m venv venv
-
+   
     .\venv\Scripts\Activate.ps1
 
 
@@ -57,12 +60,12 @@ Primero, asegúrate de estar en la raíz del proyecto cuando se ejecuten los com
     source venv/bin/activate
 
 
-4. Instalar dependencias de Python
+5. Instalar dependencias de Python
 
     pip install -r src/requirements.txt
 
 
-5. Ejecutar el servidor del Back-End
+6. Ejecutar el servidor del Back-End
 
     python src/app.py
 
@@ -77,7 +80,7 @@ Primero, asegúrate de estar en la raíz del proyecto cuando se ejecuten los com
     El servidor estará en el puerto http://127.0.0.1:3245 por defecto
 
 
-6. En otro terminal ejecutar el Front-End
+7. En otro terminal ejecutar el Front-End, asegurándonos que estamos en la carpeta adecuada antes
 
     npm install
 
